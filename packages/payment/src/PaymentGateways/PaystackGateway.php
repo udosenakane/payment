@@ -24,5 +24,16 @@ class PaystackGateway implements PaymentGateway
 
         return $response;
     }
+
+
+    public function list($headers=[], $params=[]){
+
+        // $headers = [
+        //     'Authorization' => 'Bearer sk_test_94da6c3369ddf3e67427077c1b6e0726a7f660a7',
+        //     'Content-Type' => 'application/json'
+        // ];
+        $response = Http::withHeaders($headers)->get('https://api.paystack.co/transfer', $params);
+        return $response;
+    }
     
 }

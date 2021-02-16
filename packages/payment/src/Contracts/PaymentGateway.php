@@ -10,5 +10,13 @@ interface PaymentGateway
      *
      * @return json
      */
-    public function transfer($headers = [], $params =[]);
+    public function transfer($params =[]);
+
+
+    /**
+     * liist transfers history.
+     *
+     * @return array
+     */
+    public function list($params = []);
 }
