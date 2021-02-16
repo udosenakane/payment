@@ -1,0 +1,24 @@
+{
+    "name": "achemist/payment",
+    "description": "Payment API",
+    "authors": [
+        {
+            "name": "Akan Udosen",
+            "email": "udosenakane@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Payment\\Payment\\": "packages/payment/src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Payment\\Payment\\PaymentServiceProvider"
+            ]
+        }
+    }
+
+}
